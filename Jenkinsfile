@@ -1,16 +1,13 @@
 pipeline {
     agent {
-        dockerfile true
-    }
-    
-    tools {
-        maven "Maven 3.6.3"
+        docker {
+            image "maven:3.6.3-openjdk-15"
+        }
     }
     
     stages {
         stage("Build") {
             steps {
-                sh "git clone https://github.com/johnreah/simple-java-maven-app.git ."
                 sh "mvn -v"
                 sh "mvn clean package"
             }
