@@ -39,10 +39,10 @@ List<Artifact> artifacts = [
 //}
 
 def collectUrls() {
-  //artifacts.each {
+  artifacts.each {
       //findInNexus it
       println "Hello"
-  //}
+  }
 }
 
 return this
