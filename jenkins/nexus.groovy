@@ -9,6 +9,10 @@ class Artifact {
     String packaging
     String version
     String url
+    
+    def toString() {
+        return "Artifact: " + artifactId
+    }
 }
 
 //def findInNexus(Artifact artifact) {
@@ -40,7 +44,7 @@ List<Artifact> artifacts = [
 ]
   artifacts.each {
       //findInNexus it
-      println "Hello"
+      println it
   }
 }
 
