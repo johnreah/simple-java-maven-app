@@ -1,5 +1,4 @@
-//def nexusCode
-@Library('nexus')
+@Library('nexus') _
 
 pipeline {
     agent {
