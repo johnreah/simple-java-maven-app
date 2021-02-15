@@ -10,7 +10,7 @@ class Artifact {
     String url
     
     String toString() {
-        return "Artifact: " + artifactId
+        return "Artifact: artifactId=" + artifactId + " url=" + url
     }
 }
 
