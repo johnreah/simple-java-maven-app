@@ -44,7 +44,7 @@ List<Artifact> artifacts = [
 ]
   artifacts.each {
       //findInNexus it
-      println it
+      println it.toString()
   }
 }
 
