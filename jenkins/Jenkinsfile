@@ -33,12 +33,12 @@ pipeline {
             steps {
                 library 'nexus'
                 globalStep 'junk'
-                script {
+                //script {
                     //nexusCode = load('./jenkins/nexus.groovy')
                     //nexusCode.collectUrls()
                     //library 'nexus'
                     //globalMethod()
-                }
+                //}
             }
         }
     }
