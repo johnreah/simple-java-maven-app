@@ -29,10 +29,10 @@ pipeline {
             }
         }
         stage('Nexus') {
-            steps {
-                nexusCode = load './jenkins/nexus.groovy')
+            //steps {
+                nexusCode = load './jenkins/nexus.groovy'
                 nexusCode.collectUrls()
-            }
+            //}
         }
     }
 }
