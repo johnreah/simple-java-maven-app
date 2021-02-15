@@ -31,8 +31,10 @@ pipeline {
         stage('Nexus') {
             steps {
                 script {
-                    nexusCode = load('./jenkins/nexus.groovy')
-                    nexusCode.collectUrls()
+                    //nexusCode = load('./jenkins/nexus.groovy')
+                    //nexusCode.collectUrls()
+                    library 'Nexus'
+                    globalMethod()
                 }
             }
         }
