@@ -34,7 +34,7 @@ pipeline {
                     //nexusCode = load('./jenkins/nexus.groovy')
                     //nexusCode.collectUrls()
                     library 'nexus'
-                    globalMethod()
+                    nexus.globalMethod()
                 }
             }
         }
