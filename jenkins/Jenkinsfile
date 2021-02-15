@@ -2,6 +2,8 @@
 import com.johnreah.jenkins.NexusHelper
 import com.johnreah.jenkins.Artifact
 
+List<Artifact> artifacts
+
 pipeline {
     agent {
         docker {
