@@ -1,5 +1,6 @@
 @Library('nexus')
 import com.johnreah.jenkins.NexusHelper
+import com.johnreah.jenkins.Artifact
 
 pipeline {
     agent {
@@ -32,8 +33,6 @@ pipeline {
         stage('Nexus') {
             steps {
                 globalStep 'junk'
-                nh = new NexusHelper()
-                nh.run("hello")
                 //script {
                     //nexusCode = load('./jenkins/nexus.groovy')
                     //nexusCode.collectUrls()
