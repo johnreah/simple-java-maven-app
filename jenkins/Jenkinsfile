@@ -38,7 +38,7 @@ pipeline {
 //        }
         stage('Nexus') {
             steps {
-                globalStep 'junk'
+                globalStep artifacts
                 //script {
                     //nexusCode = load('./jenkins/nexus.groovy')
                     //nexusCode.collectUrls()
