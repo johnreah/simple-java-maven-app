@@ -42,7 +42,7 @@ List<Artifact> artifacts = [
         new Artifact(groupId: "commons-logging", artifactId: "commons-logging-api", packaging: "jar")
 ]
   artifacts.each {
-      //findInNexus it
+      findInNexus it
       println it.toString()
   }
 }
