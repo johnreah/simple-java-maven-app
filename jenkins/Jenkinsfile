@@ -1,5 +1,5 @@
 @Library('nexus')
-import com.johnreah.jenkins
+import com.johnreah.jenkins.Artifact
 
 pipeline {
     agent {
