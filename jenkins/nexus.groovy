@@ -2,7 +2,7 @@
 import groovy.json.JsonSlurper
 import groovy.transform.ToString
 
-//@ToString
+@ToString
 class Artifact {
     String groupId
     String artifactId
