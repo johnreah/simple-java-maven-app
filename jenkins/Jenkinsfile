@@ -1,5 +1,5 @@
 @Library('nexus')
-import TestClass2
+import com.johnreah.jenkins.NexusHelper
 
 pipeline {
     agent {
