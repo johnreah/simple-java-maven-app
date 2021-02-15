@@ -3,13 +3,13 @@ import groovy.json.JsonSlurper
 import groovy.transform.ToString
 
 //@ToString
-//class Artifact {
-//    String groupId
-//    String artifactId
-//    String packaging
-//    String version
-//    String url
-//}
+class Artifact {
+    String groupId
+    String artifactId
+    String packaging
+    String version
+    String url
+}
 
 //List<Artifact> artifacts = [
 //        new Artifact(groupId: "com.mycompany.app", artifactId: "my-app", packaging: "jar"),
