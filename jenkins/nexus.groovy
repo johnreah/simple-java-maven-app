@@ -11,11 +11,11 @@ class Artifact {
     String url
 }
 
-//List<Artifact> artifacts = [
-//        new Artifact(groupId: "com.mycompany.app", artifactId: "my-app", packaging: "jar"),
-//        new Artifact(groupId: "com.google.collections", artifactId: "google-collections", packaging: "jar"),
-//        new Artifact(groupId: "commons-logging", artifactId: "commons-logging-api", packaging: "jar")
-//]
+List<Artifact> artifacts = [
+        new Artifact(groupId: "com.mycompany.app", artifactId: "my-app", packaging: "jar"),
+        new Artifact(groupId: "com.google.collections", artifactId: "google-collections", packaging: "jar"),
+        new Artifact(groupId: "commons-logging", artifactId: "commons-logging-api", packaging: "jar")
+]
 
 //def findInNexus(Artifact artifact) {
 //    def connection = new URL(""
