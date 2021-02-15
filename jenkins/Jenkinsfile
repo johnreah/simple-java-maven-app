@@ -32,7 +32,7 @@ pipeline {
             steps {
                 script {
                     nexusCode = load('./jenkins/nexus.groovy')
-                    //nexusCode.collectUrls()
+                    nexusCode.collectUrls()
                 }
             }
         }
