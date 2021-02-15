@@ -1,4 +1,5 @@
-def nexusCode
+//def nexusCode
+@Library('nexus')
 
 pipeline {
     agent {
@@ -31,12 +32,12 @@ pipeline {
         stage('Nexus') {
             steps {
                 library 'nexus'
-                globalMethod()
+                globalStep 'junk'
                 script {
                     //nexusCode = load('./jenkins/nexus.groovy')
                     //nexusCode.collectUrls()
-                    library 'nexus'
-                    globalMethod()
+                    //library 'nexus'
+                    //globalMethod()
                 }
             }
         }
