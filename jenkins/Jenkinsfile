@@ -32,6 +32,8 @@ pipeline {
         stage('Nexus') {
             steps {
                 globalStep 'junk'
+                nh = new NexusHelper()
+                nh.run("hello")
                 //script {
                     //nexusCode = load('./jenkins/nexus.groovy')
                     //nexusCode.collectUrls()
