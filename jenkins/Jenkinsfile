@@ -1,5 +1,5 @@
 @Library('nexus')
-import TestClass
+import TestClass2
 
 pipeline {
     agent {
