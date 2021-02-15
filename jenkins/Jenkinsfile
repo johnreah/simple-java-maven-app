@@ -1,4 +1,5 @@
-@Library('nexus') _
+@Library('nexus')
+import com.johnreah.jenkins
 
 pipeline {
     agent {
@@ -30,7 +31,6 @@ pipeline {
 //        }
         stage('Nexus') {
             steps {
-                library 'nexus'
                 globalStep 'junk'
                 //script {
                     //nexusCode = load('./jenkins/nexus.groovy')
