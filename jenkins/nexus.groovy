@@ -10,7 +10,7 @@ class Artifact {
     String version
     String url
     
-    def toString() {
+    String toString() {
         return "Artifact: " + artifactId
     }
 }
