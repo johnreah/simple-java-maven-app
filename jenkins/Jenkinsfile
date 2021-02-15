@@ -2,7 +2,11 @@
 import com.johnreah.jenkins.NexusHelper
 import com.johnreah.jenkins.Artifact
 
-List<Artifact> artifacts
+List<Artifact> artifacts = [
+        new Artifact(groupId: "com.mycompany.app", artifactId: "my-app", packaging: "jar"),
+        new Artifact(groupId: "com.google.collections", artifactId: "google-collections", packaging: "jar"),
+        new Artifact(groupId: "commons-logging", artifactId: "commons-logging-api", packaging: "jar")
+]
 
 pipeline {
     agent {
