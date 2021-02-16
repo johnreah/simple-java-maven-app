@@ -37,7 +37,7 @@ pipeline {
 //        }
         stage('Nexus') {
             steps {
-                nexusFindArtifacts artifacts
+                nexusFindArtifacts "http://172.17.0.2:8081/service/rest", artifacts
             }
         }
     }
