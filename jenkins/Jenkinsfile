@@ -38,13 +38,7 @@ pipeline {
 //        }
         stage('Nexus') {
             steps {
-                globalStep artifacts
-                //script {
-                    //nexusCode = load('./jenkins/nexus.groovy')
-                    //nexusCode.collectUrls()
-                    //library 'nexus'
-                    //globalMethod()
-                //}
+                nexusFindArtifacts artifacts
             }
         }
     }
