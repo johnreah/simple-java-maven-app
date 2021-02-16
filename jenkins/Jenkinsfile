@@ -41,6 +41,7 @@ pipeline {
             steps {
                 nexusFindArtifacts nexusApi, artifacts
                 writeJSON file: "manifest.json", json: artifacts, pretty: 4
+                archiveArtifacts artifacts: "manifest.json"
             }
         }
     }
