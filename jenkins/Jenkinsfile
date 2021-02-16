@@ -1,6 +1,6 @@
-@Library('nexus')
-import com.johnreah.jenkins.NexusHelper
-import com.johnreah.jenkins.Artifact
+@Library('nexus') _
+
+//import com.johnreah.jenkins.Artifact
 
 List<Artifact> artifacts = [
         new Artifact(groupId: "com.mycompany.app", artifactId: "my-app", packaging: "jar"),
