@@ -40,6 +40,7 @@ pipeline {
         stage('Nexus') {
             steps {
                 nexusFindArtifacts nexusApi, artifacts
+                writeJson file: "manifest.json", json: artifacts, pretty: 4
             }
         }
     }
