@@ -1,6 +1,8 @@
 @Library('nexus')
 import com.johnreah.jenkins.Artifact
 
+String nexusApi = "http://172.17.0.2:8081/service/rest"
+
 List<Artifact> artifacts = [
         new Artifact(groupId: "com.mycompany.app", artifactId: "my-app", packaging: "jar"),
         new Artifact(groupId: "com.google.collections", artifactId: "google-collections", packaging: "jar"),
@@ -37,7 +39,7 @@ pipeline {
 //        }
         stage('Nexus') {
             steps {
-                nexusFindArtifacts "http://172.17.0.2:8081/service/rest", artifacts
+                nexusFindArtifacts nexusApi, artifacts
             }
         }
     }
